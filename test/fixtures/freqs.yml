@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  word: MyString
+  qtde: 1
+  perc: 1.5
+  anomes: 1
+  score: 1
+
+two:
+  word: MyString
+  qtde: 1
+  perc: 1.5
+  anomes: 1
+  score: 1

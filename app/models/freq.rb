@@ -1,0 +1,2 @@
+class Freq < ApplicationRecord
+end
