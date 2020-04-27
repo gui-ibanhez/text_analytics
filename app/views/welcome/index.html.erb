@@ -3,17 +3,22 @@
     <%= form_tag("#", method: "get", id: "cloud_form1", class: "mt-3") do %>
       <div class="form-group">
         <div class="row">
-          <div class="col-sm-4">
+          <div class="col-sm-3">
             <%= label :selectDate1, "Data Referência:"%>
-            <%= select_tag :selectDate1, options_for_select([202001, 202002, 202003, 202004, 202005]), 
+            <%= select_tag :selectDate1, options_for_select(available_months), 
                 options = { include_blank: true, class: "form-control state" } %>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-3">
             <%= label :selectScore1, "Nota Termômetro:"%>
             <%= select_tag :selectScore1, options_for_select([1, 2, 3, 4, 5]), 
                 options = { include_blank: true, class: "form-control state" } %>
           </div>
-          <div class="col-sm-4 d-flex align-items-end">
+          <div class="col-sm-3">
+            <%= label :selectGraph1, "Gráfico:"%>
+            <%= select_tag :selectGraph1, options_for_select(['Wordcloud', 'Barra']), 
+                options = { class: "form-control state" } %>
+          </div>
+          <div class="col-sm-3 d-flex align-items-end">
             <%= button_tag("Enviar", class: "btn btn-primary navbar-vivo", id: "enviar1", name: "enviar1") %>
           </div>
         </div>
@@ -25,17 +30,22 @@
     <%= form_tag("#", method: "get", id: "cloud_form2", class: "mt-3") do %>
       <div class="form-group">
         <div class="row">
-          <div class="col-sm-4">
+          <div class="col-sm-3">
             <%= label :selectDate2, "Data Referência:"%>
-            <%= select_tag :selectDate2, options_for_select([202001, 202002, 202003, 202004, 202005]), 
+            <%= select_tag :selectDate2, options_for_select(available_months), 
                 options = { include_blank: true, class: "form-control state" } %>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-3">
             <%= label :selectScore2, "Nota Termômetro:"%>
             <%= select_tag :selectScore2, options_for_select([1, 2, 3, 4, 5]), 
                 options = { include_blank: true, class: "form-control state" } %>
           </div>
-          <div class="col-sm-4 d-flex align-items-end">
+          <div class="col-sm-3">
+            <%= label :selectGraph2, "Gráfico:"%>
+            <%= select_tag :selectGraph2, options_for_select(['Wordcloud', 'Barra']), 
+                options = { class: "form-control state" } %>
+          </div>
+          <div class="col-sm-3 d-flex align-items-end">
             <%= button_tag("Enviar", class: "btn btn-primary navbar-vivo", id: "enviar2", name: "enviar2") %>
           </div>
         </div>
